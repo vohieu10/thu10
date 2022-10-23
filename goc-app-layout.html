@@ -1,0 +1,136 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>app-layout-goc</title>
+  </head>
+  <style>
+    /* DEFAUT and LAYOUT*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      font-size: 24px;
+      color: #343a40;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+    nav,
+    main,
+    aside {
+      text-align: center;
+      font-weight: bold;
+    }
+    main,
+    aside {
+      padding-top: 18px;
+    }
+
+    nav {
+      grid-row: 1/-1;
+      padding: 24px 3px;
+      background-color: #343a40;
+      color: #fff;
+    }
+
+    menu {
+      grid-column: 2/-1;
+      background-color: #7048e8;
+      padding: 0 40px;
+    }
+    .flex > *,
+    .grid > * {
+      display: inline-block;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 80px 400px 1fr 250px;
+      grid-template-rows: 80px 1fr;
+      height: 100vh;
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    .sp-between {
+      justify-content: space-between;
+    }
+    .flex-col {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      padding: 8px 12px;
+      background-color: #5f3dc4;
+      color: #fff;
+      font-size: 16px;
+    }
+    .flex-col .btn--big {
+      font-size: 24px;
+      padding: 35px 85px;
+      color: #343a40;
+      font-size: 24px;
+      background-color: #adb5bd;
+    }
+
+    .trash-btn {
+      background-color: #d6336c;
+    }
+    section {
+      grid-column: 2/3;
+      background-color: #e9ecef;
+      padding: 40px 0;
+      overflow: auto;
+    }
+    aside {
+      background-color: #e9ecef;
+    }
+  </style>
+  <body>
+    <div class="grid">
+      <nav><div class="navbar">Nav</div></nav>
+      <menu class="flex sp-between">
+        <div class="flex">
+          <button class="btn">New</button>
+          <button class="btn">Reply</button>
+          <button class="btn">Forwark</button>
+          <button class="btn">Mark undred</button>
+        </div>
+        <button class="btn trash-btn">Trash</button>
+      </menu>
+      <section>
+        <ul class="flex flex-col">
+          <li class="btn btn--big">Email 1</li>
+          <li class="btn btn--big">Email 2</li>
+          <li class="btn btn--big">Email 3</li>
+          <li class="btn btn--big">Email 4</li>
+          <li class="btn btn--big">Email 5</li>
+          <li class="btn btn--big">Email 6</li>
+          <li class="btn btn--big">Email 7</li>
+          <li class="btn btn--big">Email 8</li>
+          <li class="btn btn--big">Email 9</li>
+          <li class="btn btn--big">Email 10</li>
+        </ul>
+      </section>
+      <main><h1>Main</h1></main>
+      <aside><h3>Aside</h3></aside>
+    </div>
+  </body>
+</html>

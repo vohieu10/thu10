@@ -1,0 +1,122 @@
+<!-- @format -->
+<!-- @format -->
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- gg font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>92-93-table</title>
+    <style>
+      /* main-color:#087f5b
+           gray-color: #343a40*/
+      /* tat de tu css */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* border: 2px solid blue; */
+      }
+      body {
+        font-family: "inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+        /* 2.1:can giua cho table */
+        display: flex;
+        justify-content: center;
+      }
+      table {
+        /* 1 */
+        width: 800px;
+        /*1 den 2.3 thi loai bo background-color: red; */
+        /* 2.2 */
+        margin-top: 100px;
+        /* 8 */
+        font-size: 18px;
+
+        /* 2.2 tao roi 6: bỏ tất cả border để đề phòng ta tạo border cho riêng mình*/
+        /* border: 1px solid #343a40; */
+        /* (4, 6, 7): 4:nhap 2 border thanh 1 +rồi 6: bỏ + 8: mở lại*/
+        border-collapse: collapse;
+      }
+      /* 11 */
+      th,
+      td {
+        /* 3 tao roi 6: bỏ để đề phòng ta tạo border cho riêng mình*/
+        /* border: 1px solid #343a40; */
+        /* 5 */
+        padding: 16px 24px;
+        text-align: left;
+      }
+      thead tr {
+        /* 10.2 */
+        background-color: #087f5b;
+        color: #fff;
+      }
+      thead th {
+        /* (7, 10.1)10: cut past vào thed tr ta cũng có cùng kết quả*/
+        /*10: cut past: background-color: #087f5b;
+        color: #fff; */
+        width: 25%;
+      }
+      /* 9: nói lại bộ chọn lớp giả đến phần tử con */
+      /* tbody tr:nth-child(3) {
+        background-color: red;
+      } */
+      /* 11 */
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #e9ecef;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Chair</th>
+          <th>The Laid Back</th>
+          <th>The Worker Bee</th>
+          <th>The Chair 4/2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Width</th>
+          <td>80 cm</td>
+          <td>60 cm</td>
+          <td>220 cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>100cm</td>
+          <td>110cm</td>
+          <td>90cm</td>
+        </tr>
+        <tr>
+          <th>Depth</th>
+          <td>70 cm</td>
+          <td>65 cm</td>
+          <td>80 cm</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>16 kg</td>
+          <td>22 kg</td>
+          <td>80 kg</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
